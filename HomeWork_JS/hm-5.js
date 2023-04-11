@@ -1,3 +1,4 @@
+
 // Задание 1
 // const array = [1, 5, 4, 10, 0, 3];
 // for (let a = 0; a < array.length; a++) {
