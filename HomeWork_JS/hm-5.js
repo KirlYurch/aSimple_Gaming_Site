@@ -9,10 +9,16 @@
 
 // Задание 2
 // const array = [1, 5, 4, 10, 0, 3];
+
+// Вариант решения 1
 // array.forEach((el, index) => {
 //     if (el === 4) {
 //         console.log(`${index}`);
 // }});
+// Вариант решения 2
+// let result = array.indexOf(4);
+// console.log(`${result}`);
+
 
 
 // Задание 3
@@ -68,7 +74,11 @@
 
 
 // Задание 10
-// let arrayRandom = [2, 5, 7, 1, 8, 3, 9];
+// let arrayRandom = [];
+// for (let a = 0; a < 10; a++) {
+//     arrayRandom[a] = Math.round(Math.random() * 10);
+// }
+// console.log(arrayRandom);
 // for (let a = 0; a < arrayRandom.length -1; a++) {
 //     console.log(arrayRandom [a] + arrayRandom [a + 1]);
 // }
@@ -76,7 +86,10 @@
 
 // Задание 11
 // function square () {
-//     const arrayRandom = [2, 5, 7, 1, 8, 3, 9];
+//     let arrayRandom = [];
+// for (let a = 0; a < 10; a++) {
+//     arrayRandom[a] = Math.round(Math.random() * 10);
+// }
 //     let result = arrayRandom.map(item => (item**2));
 //     console.log(result);
 // }
