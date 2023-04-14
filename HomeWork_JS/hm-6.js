@@ -50,7 +50,7 @@
 //     let userNumberHalf = Math.floor(userNumber / 2);
 //     let arrayRandom = [];
 // for (let a = 0; a < userNumber; a++) {
-//     arrayRandom[a] = Math.round(Math.random() * 10);
+//     arrayRandom[a] = Math.round(Math.random() * userNumber);
 // }
 // arrayRandom.splice(0, userNumberHalf);
 // console.log(arrayRandom);
@@ -74,9 +74,10 @@
 // Задание 9
 // let currentDate = new Date();
 // console.log(currentDate);
-// currentDate.setDate(78);
-// console.log(currentDate);
-
+// let futureDate = new Date();
+// futureDate.setDate(currentDate.getDate() + 73);
+// console.log(`Дата, которая наступит через 73 дня:
+// ${futureDate}`);
 
 // Задание 10
 // function conclusionTime () {

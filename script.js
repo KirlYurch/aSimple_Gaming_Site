@@ -16,9 +16,9 @@ function game1() {
 }
 
 function game2() {
-    let fruitsGame = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
+    let fruitsGame = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     fruitsGame = fruitsGame.sort(() => Math.random() - 0.5);
-    alert(`${fruitsGame}`);
+    alert(`${fruitsGame.join(", ")}`);
     let userResponseStart = String(prompt(`Чему равнялся первый элемент массива?`));
     let userResponseEnd = String(prompt(`Чему равнялся последний элемент массива?`));
 
