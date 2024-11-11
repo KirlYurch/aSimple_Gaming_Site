@@ -19,47 +19,51 @@
             <p class="top_logo_description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
                     class="highlight">поехали</span> и <span class="highlight">приступай</span></p>
             <nav>
-                <button class="top_button">Поехали!</button>
+                <a href="#games" style="text-decoration: none; color: inherit;">
+                <button class="top_button">
+                    Поехали!
+                </button>
+            </a>
             </nav>
         </div>
     </div>
-    <div class="main_content center">
+    <div class="main_content center" id="games">
         <div class="content">
-            <div onclick="game1()" class="content_menu c_m1"><span class="font">Игра 1</span></div>
-            <div class="content_menu c_m2"><span class="font">Игра 2</span></div>
-            <div class="content_menu c_m3"><span class="font">Игра 3</span></div>
+            <a href="#games1" style="text-decoration: none; color: inherit;"><div class="content_menu c_m1"><span class="font">Игра 1</span></div></a>
+            <a href="#games2" style="text-decoration: none; color: inherit;"><div class="content_menu c_m2"><span class="font">Игра 2</span></div></a>
+            <a href="#games3" style="text-decoration: none; color: inherit;"><div class="content_menu c_m3"><span class="font">Игра 3</span></div></a>
         </div>
-        <div class="content2">
+        <div class="content2" id="games1">
             <div class="content2_box">
                 <h2 class="top_logo content2_box_Zagl">Времена года</h2>
                 <p class="top_logo_description content2_box_§">Нажмите кнопку играть, введите номер месяца (от 1 до 12)
                     и вы узнаете к какому времени года он относится</p>
                 <nav>
-                    <button class="top_button content2_box_button">Играть!</button>
+                    <button onclick=game1() class="top_button content2_box_button">Играть!</button>
                 </nav>
             </div>
             <img class="content2_img" src="img/png1.png" alt="">
         </div>
-        <div class="content2 content3">
+        <div class="content2 content3" id="games2">
             <img class="content2_img png2" src="img/png2.png" alt="">
             <div class="content2_box content3_content_box">
                 <h2 class="top_logo content2_box_Zagl">Запомни слова </h2>
                 <p class="top_logo_description content2_box_§">При нажатии на кнопку играть, вы увидите несколько слов,
                     которые вам необходимо запомнить.</p>
                 <nav>
-                    <button class="top_button content2_box_button">Играть!</button>
+                    <button onclick=game2() class="top_button content2_box_button">Играть!</button>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="content2 content4">
+    <div class="content2 content4" id="games3">
         <div class="content2_box content4_box center">
             <h2 class="top_logo content2_box_Zagl">Игра в загадки </h2>
             <p class="top_logo_description content2_box_§ content4_box_§">Компьютер загадывает загадку, вам необходимо
                 ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки
                 и две подсказки.</p>
             <nav>
-                <button class="top_button content2_box_button">Играть!</button>
+                <button onclick= game3() class="top_button content2_box_button">Играть!</button>
             </nav>
         </div>
     </div>
