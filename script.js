@@ -2,16 +2,16 @@ function game1() {
     let monthNumber = Number(prompt('Напишите номер месяца, чтобы определить к какому сезону он принадлежит'));
     if (1 <= monthNumber && monthNumber <= 12) {
         if (3 <= monthNumber && monthNumber <= 5) {
-            console.log('Весна');
+            alert('Весна');
         } else if (6 <= monthNumber && monthNumber <= 8) {
-            console.log('Лето');
+            alert('Лето');
         } else if (9 <= monthNumber && monthNumber <= 11) {
-            console.log('Осень');
+            alert('Осень');
         } else {
-            console.log('Зима');
+            alert('Зима');
         }
     } else {
-        console.log('Введен некорректный номер месяца');
+        alert('Введен некорректный номер месяца');
     }
 }
 
@@ -31,3 +31,33 @@ function game2() {
     )
 }
 
+function game3() {
+    const riddle = "Зимой и летом одним цветом"; // загадка
+    const answer = "Ёлка"; // правильный ответ
+    const hints = ["Это дерево", "Оно зеленое круглый год"]; // подсказки
+    let attempts = 3; // количество попыток
+    let hintIndex = 0; // индекс текущей подсказки
+
+    // Функция для замены "ё" на "е" для корректного сравнения
+    function normalize(text) {
+        return text.toLowerCase().replace(/ё/g, 'е');
+    }
+
+    while (attempts > 0) {
+        let userAnswer = prompt(`Загадка: ${riddle}\nУ вас осталось попыток: ${attempts}`).trim();
+
+        if (normalize(userAnswer) === normalize(answer)) {
+            alert("Поздравляем, вы угадали!");
+            return;
+        } else {
+            attempts--;
+            if (attempts > 0 && hintIndex < hints.length) {
+                alert(`Неправильно. Подсказка: ${hints[hintIndex]}`);
+                hintIndex++;
+            } else if (attempts > 0) {
+                alert("Неправильно. Попробуйте ещё раз!");
+            }
+        }
+    }
+    alert(`К сожалению, вы проиграли. Правильный ответ: ${answer}`);
+}
